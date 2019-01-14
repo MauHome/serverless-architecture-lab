@@ -41,7 +41,7 @@ namespace TollBooth
                 // MaxItemCount value tells the document query to retrieve 100 documents at a time until all are returned.
                 // Retrieve a List of LicensePlateDataDocument objects from the collectionLink where the exported value is false.
                 licensePlates = _client.CreateDocumentQuery<LicensePlateDataDocument>(collectionLink,
-                    new FeedOptions() { EnableCrossPartitionQuery = true, MaxItemCount = 100 })
+                    new FeedOptions() { EnableCrossPartitionQuery = true, MaxItemCount = 100 });
 
                 // COMPLETE: licensePlates = _client.CreateDocumentQuery ...
                 // Remove the line below.
